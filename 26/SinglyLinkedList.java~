@@ -1,0 +1,31 @@
+public class SinglyLinkedList {
+  private Node h;
+  
+  public SinglyLinkedList(){
+     h = new Node();
+     
+  }
+  
+  public void insert(Listing listing){
+    Node newNode = new Node();
+    newNode.next = h.next;
+    h.next = newNode;
+    newNode.l = listing;
+  }
+  
+  public void delete(){
+    
+  }
+  
+  
+  
+//the node class for the linked list that refrences a listing component
+  class Node {
+    private Listing l;
+    private Node next;
+    
+    Node (){
+      
+    }
+  }
+}

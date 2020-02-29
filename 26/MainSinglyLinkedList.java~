@@ -1,0 +1,7 @@
+public class MainSinglyLinkedList {
+  public static void main(String args[]){
+    SinglyLinkedList<Listing> school = new SinglyLinkedList<Listing>();
+    
+    
+  }
+}

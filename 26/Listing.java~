@@ -1,0 +1,34 @@
+public class Listing {
+ private String name;
+ private int id;
+ private int gpa;
+ 
+ public Listing(String name, int id, int gpa){
+   this.name = name;
+   this.id = id;
+   this.gpa = gpa;
+ }
+ 
+ public String toString(){
+   return "Name: " + name + ", ID: " + id + ", GPA: " + gpa;
+ }
+ 
+ public Listing deepCopy(){
+   Listing clone = new Listing(name, id, gpa);
+   return clone;
+ }
+ 
+ public compareTo(String targetKey){
+   return name.compareTO(targetKey);
+ }
+ 
+ public void setName(String name){
+   this.name = name;
+ }
+ 
+ public void input(){
+   name = JOptionPane.showInputDialogue("Enter a name");
+   id = JOptionPane.showInputDialogue("Enter an id");
+   gpa = JOptionPane.showInputDialogue("Enter a gpa");
+ }
+}
